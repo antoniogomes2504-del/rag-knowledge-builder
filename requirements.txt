@@ -1,0 +1,9 @@
+streamlit
+python-docx
+pypdf
+tiktoken
+# Force Rebuild for Streamlit
+
+# Force Rebuild
+
+# update
