@@ -13,7 +13,24 @@ st.info("Ferramenta interna para preparação de datasets RAG.")
 
 # Sidebar configuration
 st.sidebar.header("Configurações")
+
+with st.sidebar.expander("ℹ️ O que é Chunk Size?", expanded=False):
+    st.markdown("""
+    **Tamanho do bloco de texto** lido por vez.
+    - **Muito pequeno:** Perde contexto.
+    - **Muito grande:** Mistura assuntos.
+    - *Recomendado: 500-800*
+    """)
+
 chunk_size = st.sidebar.slider("Chunk size (tokens)", 100, 2000, 700)
+
+with st.sidebar.expander("ℹ️ O que é Overlap?", expanded=False):
+    st.markdown("""
+    **Sobreposição entre blocos** para não cortar frases.
+    - Garante continuidade.
+    - *Recomendado: 10-20% do tamanho*
+    """)
+
 overlap = st.sidebar.slider("Overlap (tokens)", 0, 500, 100)
 
 uploaded_files = st.file_uploader(
