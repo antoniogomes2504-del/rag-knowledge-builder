@@ -40,6 +40,15 @@ No menu lateral esquerdo, você verá duas barras de ajuste. Aqui está o que el
     *   Geralmente **10% a 20%** do tamanho do Chunk.
     *   Exemplo: Se Chunk Size é `700`, use Overlap de `70` a `100`.
 
+### 3. Quando alterar as configurações? (Guia Prático)
+
+| Situação | Ajuste Recomendado | Por quê? |
+| :--- | :--- | :--- |
+| **Padrão (Maioria dos casos)** | **700 / 100** | Funciona bem para manuais, artigos e textos gerais. |
+| **Textos Complexos / Contratos** | **Aumentar Chunk (1000+)** | Se o documento tem parágrafos muito longos e a IA precisa ler "muito" para entender o contexto de uma cláusula. |
+| **FAQ / Perguntas e Respostas** | **Diminuir Chunk (300-500)** | Se cada resposta é curta, um chunk grande pode misturar a "Resposta A" com a "Pergunta B", confundindo a IA. |
+| **IA responde "pela metade"** | **Aumentar Overlap (150-200)** | Se a IA corta o raciocínio no meio, aumentar a repetição ajuda a conectar os pontos. |
+
 ---
 
 ## 👣 Passo a Passo
