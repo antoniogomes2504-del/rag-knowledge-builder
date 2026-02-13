@@ -2,8 +2,8 @@
 import streamlit as st
 import os
 import shutil
-from processor import process_file
-from utils import export_to_markdown, export_to_json
+from src.processor import process_file
+from src.utils import export_to_markdown, export_to_json
 
 st.set_page_config(page_title="RAG Knowledge Builder", layout="wide")
 
